@@ -35,7 +35,7 @@ const expressFormData = require('express-form-data');
 const mongoose = require('mongoose');
 const ProductRoutes = require('./routes/ProductRoutes');
 const UserRoutes = require('./routes/UserRoutes');
-// const FeedRoutes = require('./routes/FeedRoutes');
+const FeedRoutes = require('./routes/FeedRoutes');
 const dbURL = process.env.DB_URL;
 
 mongoose
@@ -105,10 +105,10 @@ server.use(
     UserRoutes
 );
 
-// server.use(
-//     '/feeds',
-//     FeedRoutes
-// );
+server.use(
+    '/feeds',
+    FeedRoutes
+);
 
 server.get(
     '/404',

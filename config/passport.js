@@ -7,7 +7,7 @@ const secret = process.env.SECRET;
 // Options for passport-jwt
 const opts = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: secret
+    secretOrKey: 'secret'
 }
 
 // Function to use this strategy by passport
