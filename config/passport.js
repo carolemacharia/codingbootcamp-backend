@@ -1,5 +1,5 @@
 const PassportJWT = require('passport-jwt');
-const UserModel = require('../model/UserModel');
+const UserModel = require('../model/userModel');
 const JwtStrategy = PassportJWT.Strategy;
 const ExtractJwt = PassportJWT.ExtractJwt;
 const secret = process.env.SECRET;
