@@ -7,7 +7,7 @@ const cloudinary = require('cloudinary');
 
 const secret = process.env.SECRET;
 
-const UserModel = require('../model/UserModel');
+const UserModel = require('../model/userModel');
 
 router.post(
     '/register',
