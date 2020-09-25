@@ -33,9 +33,9 @@ const expressFormData = require('express-form-data');
 
 // Import mongoose (for connecting MongoDB)
 const mongoose = require('mongoose');
-const ProductRoutes = require('./routes/ProductRoutes');
-const UserRoutes = require('./routes/UserRoutes');
-const FeedRoutes = require('./routes/FeedRoutes');
+const ProductRoutes = require('./Routes/ProductRoutes');
+const UserRoutes = require('./Routes/UserRoutes');
+const FeedRoutes = require('./Routes/FeedRoutes');
 const dbURL = process.env.DB_URL;
 
 mongoose
